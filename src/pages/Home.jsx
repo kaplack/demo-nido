@@ -24,7 +24,14 @@ export default function Home() {
 
         <section className="grid">
           <Link className="card" to="/demos/colores-y-sonrisas">
-            <div className="cover c1"><span>Demo 01</span></div>
+            <div className="cover c1 logo-cover">
+              <span>Demo 01</span>
+              <img
+                src="/colores-y-sonrisas/logo.png"
+                alt="Logo Colores y Sonrisas"
+                className="demo-card-logo"
+              />
+            </div>
             <div className="body">
               <small>Matrícula online</small>
               <h2>Colores y Sonrisas</h2>
