@@ -24,6 +24,7 @@ export default function ColoresYSonrisas() {
             <a href="#niveles">Niveles</a>
             <a href="#requisitos">Requisitos</a>
             <a href="#preguntas">Preguntas</a>
+            <Link className="admin-demo-link" to="/demos/colores-y-sonrisas/admin">Admin demo</Link>
           </nav>
 
           <a className="btn mini" href="#formulario">Quiero matricularme</a>
