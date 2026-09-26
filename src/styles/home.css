@@ -23,3 +23,10 @@ body{background:#f7f7f4;color:#202530}.wrap{width:min(1100px,calc(100% - 40px));
   bottom:22px;
   z-index:2;
 }
+
+.contact-actions{display:flex;gap:10px;align-items:center}
+.contact-icon{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;text-decoration:none;font-size:1.3rem;font-weight:900;transition:.2s;box-shadow:0 10px 25px rgba(32,37,48,.10)}
+.contact-icon:hover{transform:translateY(-2px)}
+.contact-icon.email{background:#202530;color:#fff}
+.contact-icon.whatsapp{background:#25D366;color:#fff}
+.contact-icon svg{width:24px;height:24px;fill:currentColor}
