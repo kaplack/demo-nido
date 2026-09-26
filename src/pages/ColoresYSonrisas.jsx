@@ -24,8 +24,7 @@ export default function ColoresYSonrisas() {
       <header className="nav">
         <div className="wrap navin">
           <a className="logo" href="#inicio">
-            <i>☀</i>
-            <div><Wordmark /><small>NIDO</small></div>
+            <img src="/colores-y-sonrisas/logo.png" alt="Colores y Sonrisas Nido" />
           </a>
 
           <nav>
@@ -65,10 +64,7 @@ export default function ColoresYSonrisas() {
             <div className="hero-visual">
               <div className="sun-doodle">☀</div>
               <div className="photo-frame">
-                <div className="photo-placeholder">
-                  <span className="kid-emoji">👧</span>
-                  <small>Foto principal del nido</small>
-                </div>
+                <img className="hero-photo" src="/colores-y-sonrisas/hero.png" alt="Niña sonriendo en un aula infantil" />
               </div>
               <div className="hero-message">Pequeños hoy,<br /><b>grandes mañana</b> ♡</div>
               <div className="spark spark-one">✦</div>
@@ -98,9 +94,9 @@ export default function ColoresYSonrisas() {
             <p className="eyebrow">Nuestros niveles</p>
             <h2>Una etapa distinta, la misma alegría de aprender.</h2>
             <div className="cards level-cards">
-              <article><div className="level-photo level-yellow">👶</div><span className="n yellow">2</span><h3>2 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
-              <article><div className="level-photo level-coral">👧</div><span className="n coral">3</span><h3>3 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
-              <article><div className="level-photo level-mint">🧒</div><span className="n mint">4–5</span><h3>4 y 5 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
+              <article><div className="level-photo"><img src="/colores-y-sonrisas/nivel-2.png" alt="Nivel 2 años" /></div><span className="n yellow">2</span><h3>2 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
+              <article><div className="level-photo"><img src="/colores-y-sonrisas/nivel-3.png" alt="Nivel 3 años" /></div><span className="n coral">3</span><h3>3 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
+              <article><div className="level-photo"><img src="/colores-y-sonrisas/nivel-4.png" alt="Nivel 4 y 5 años" /></div><span className="n mint">4–5</span><h3>4 y 5 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
             </div>
           </div>
         </section>
@@ -180,7 +176,7 @@ export default function ColoresYSonrisas() {
 
       <footer>
         <div className="wrap foot">
-          <div><Wordmark /><small>NIDO · Bellavista, Callao</small></div>
+          <div className="footer-brand"><img src="/colores-y-sonrisas/logo.png" alt="Colores y Sonrisas Nido" /><small>Bellavista, Callao</small></div>
           <Link to="/">Volver al selector de demos</Link>
         </div>
       </footer>
