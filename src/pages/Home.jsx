@@ -13,19 +13,23 @@ export default function Home() {
 
       <main className="wrap">
         <section className="hero">
-          <p className="kicker">Páginas web estáticas · rápidas · responsivas</p>
-          <h1>Elige una demo</h1>
-          <p>Propuestas visuales que pueden adaptarse al logo, colores, fotografías e información de cada institución.</p>
+          <p className="kicker">Sistema de matrícula online para nidos</p>
+          <h1>Demos para mostrar cómo podría funcionar.</h1>
+          <p>Landing de matrícula, formulario para padres y un panel resumen para que el nido gestione solicitudes desde un solo lugar.</p>
+          <div className="home-actions">
+            <a className="primary-action" href="mailto:contacto@alanburga.com?subject=Quiero%20saber%20más%20sobre%20matrícula%20online">Quiero saber más</a>
+            <span>Adaptamos el flujo al proceso real de cada nido.</span>
+          </div>
         </section>
 
         <section className="grid">
           <Link className="card" to="/demos/colores-y-sonrisas">
             <div className="cover c1"><span>Demo 01</span></div>
             <div className="body">
-              <small>Educación inicial</small>
+              <small>Matrícula online</small>
               <h2>Colores y Sonrisas</h2>
-              <p>Propuesta cálida y moderna, orientada a consultas de matrícula desde celular y WhatsApp.</p>
-              <b>Ver demo →</b>
+              <p>Landing enfocada en matrícula, formulario de inscripción y dashboard de gestión.</p>
+              <b>Ver experiencia →</b>
             </div>
           </Link>
 
@@ -34,13 +38,13 @@ export default function Home() {
             <div className="body">
               <small>Nueva propuesta</small>
               <h2>Demo 02</h2>
-              <p>Espacio preparado para la siguiente demo.</p>
+              <p>Otra propuesta visual y flujo de matrícula para un segundo nido.</p>
             </div>
           </div>
         </section>
       </main>
 
-      <footer className="wrap">demo-nido.alanburga.com</footer>
+      <footer className="wrap">demo-nido.alanburga.com · demos comerciales</footer>
     </>
   )
 }
