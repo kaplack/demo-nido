@@ -1,6 +1,15 @@
 import { Link } from 'react-router-dom'
 import '../styles/colores-y-sonrisas.css'
 
+function Wordmark() {
+  return (
+    <span className="wordmark" aria-label="Colores y Sonrisas">
+      <span className="c-coral">C</span><span className="c-yellow">o</span><span className="c-teal">l</span><span className="c-coral">o</span><span className="c-mint">r</span><span className="c-teal">e</span><span className="c-yellow">s</span>
+      <span className="wordmark-y"> y </span><span className="c-teal">Sonrisas</span>
+    </span>
+  )
+}
+
 export default function ColoresYSonrisas() {
   return (
     <div className="nido-demo">
@@ -16,7 +25,7 @@ export default function ColoresYSonrisas() {
         <div className="wrap navin">
           <a className="logo" href="#inicio">
             <i>☀</i>
-            <span>Colores <small>y Sonrisas</small></span>
+            <div><Wordmark /><small>NIDO</small></div>
           </a>
 
           <nav>
@@ -33,29 +42,37 @@ export default function ColoresYSonrisas() {
 
       <main>
         <section className="hero" id="inicio">
+          <div className="hero-blob hero-blob-one"></div>
+          <div className="hero-blob hero-blob-two"></div>
           <div className="wrap heroGrid">
-            <div>
-              <p className="eyebrow">Matrículas 2027</p>
-              <h1>Tu peque puede empezar una nueva aventura con nosotros.</h1>
-              <p className="lead">Conoce los niveles disponibles, revisa la información de matrícula y completa el proceso desde tu celular.</p>
+            <div className="hero-copy">
+              <p className="eyebrow pill">Matrículas 2027 abiertas</p>
+              <h1>Grandes comienzos para un futuro lleno de <span>colores.</span></h1>
+              <p className="lead">Conoce nuestros niveles, revisa la información de matrícula y completa el proceso desde tu celular.</p>
 
               <div className="actions">
-                <a className="btn" href="#formulario">Quiero matricularme</a>
-                <a className="textLink" href="#matricula">Ver información de matrícula ↓</a>
+                <a className="btn" href="#formulario">Quiero matricularme <span>→</span></a>
+                <a className="textLink" href="#matricula">Ver información de matrícula</a>
               </div>
 
-              <div className="facts">
-                <span><b>01</b>Revisa la información</span>
-                <span><b>02</b>Completa la ficha</span>
-                <span><b>03</b>El nido te contacta</span>
+              <div className="hero-benefits">
+                <div><i>🌱</i><span><b>Juego con propósito</b><small>Aprender descubriendo</small></span></div>
+                <div><i>♥</i><span><b>Acompañamiento real</b><small>Familias siempre cerca</small></span></div>
+                <div><i>★</i><span><b>Entorno seguro</b><small>Espacios para crecer</small></span></div>
               </div>
             </div>
 
-            <div className="art">
-              <div className="sun">☀</div>
-              <div className="bubble one"></div>
-              <div className="bubble two"></div>
-              <div className="quote">💛<br />Matrícula 2027<br /><b>simple y desde el celular.</b></div>
+            <div className="hero-visual">
+              <div className="sun-doodle">☀</div>
+              <div className="photo-frame">
+                <div className="photo-placeholder">
+                  <span className="kid-emoji">👧</span>
+                  <small>Foto principal del nido</small>
+                </div>
+              </div>
+              <div className="hero-message">Pequeños hoy,<br /><b>grandes mañana</b> ♡</div>
+              <div className="spark spark-one">✦</div>
+              <div className="spark spark-two">● ● ●</div>
             </div>
           </div>
         </section>
@@ -64,25 +81,26 @@ export default function ColoresYSonrisas() {
           <div className="wrap split">
             <div>
               <p className="eyebrow">Información de matrícula</p>
-              <h2>Todo lo que una familia necesita saber antes de iniciar.</h2>
+              <h2>Todo claro antes de dar el primer paso.</h2>
+              <p className="soft">La información importante vive en un solo lugar para que las familias no tengan que buscarla entre publicaciones y mensajes.</p>
             </div>
             <div className="info-panel">
-              <div><b>Inicio de clases</b><span>Dato referencial</span></div>
-              <div><b>Horario</b><span>Turnos según disponibilidad</span></div>
-              <div><b>Proceso</b><span>Ficha → revisión → confirmación</span></div>
-              <div><b>Atención</b><span>Contacto directo con el nido</span></div>
+              <div className="info-yellow"><i>📅</i><b>Inicio de clases</b><span>Dato referencial</span></div>
+              <div className="info-coral"><i>🕘</i><b>Horario</b><span>Turnos según disponibilidad</span></div>
+              <div className="info-mint"><i>✓</i><b>Proceso</b><span>Ficha → revisión → confirmación</span></div>
+              <div className="info-teal"><i>💬</i><b>Atención</b><span>Contacto directo con el nido</span></div>
             </div>
           </div>
         </section>
 
         <section className="section alt" id="niveles">
           <div className="wrap">
-            <p className="eyebrow">Niveles disponibles</p>
-            <h2>Elige el nivel que corresponde a tu peque.</h2>
-            <div className="cards">
-              <article><span className="n coral">2</span><h3>2 años</h3><p>Información del aula, horario y vacantes.</p></article>
-              <article><span className="n yellow">3</span><h3>3 años</h3><p>Información del aula, horario y vacantes.</p></article>
-              <article><span className="n mint">4–5</span><h3>4 y 5 años</h3><p>Información del aula, horario y vacantes.</p></article>
+            <p className="eyebrow">Nuestros niveles</p>
+            <h2>Una etapa distinta, la misma alegría de aprender.</h2>
+            <div className="cards level-cards">
+              <article><div className="level-photo level-yellow">👶</div><span className="n yellow">2</span><h3>2 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
+              <article><div className="level-photo level-coral">👧</div><span className="n coral">3</span><h3>3 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
+              <article><div className="level-photo level-mint">🧒</div><span className="n mint">4–5</span><h3>4 y 5 años</h3><p>Información del aula, horario y vacantes.</p><a href="#formulario">Quiero matricular →</a></article>
             </div>
           </div>
         </section>
@@ -90,9 +108,14 @@ export default function ColoresYSonrisas() {
         <section className="section" id="requisitos">
           <div className="wrap requirements">
             <div>
-              <p className="eyebrow">Requisitos</p>
-              <h2>Antes de empezar tu matrícula.</h2>
-              <p className="soft">En la versión final, el nido define exactamente qué documentos y datos necesita.</p>
+              <p className="eyebrow">Proceso sencillo</p>
+              <h2>Matricular desde el celular, paso a paso.</h2>
+              <p className="soft">En la versión final, el nido define exactamente qué datos, documentos y validaciones necesita.</p>
+              <div className="process-steps">
+                <span><b>01</b> Revisa la información</span>
+                <span><b>02</b> Completa la ficha</span>
+                <span><b>03</b> Recibe la confirmación</span>
+              </div>
             </div>
             <div className="checklist">
               <span>✓ Datos del niño o niña</span>
@@ -106,13 +129,16 @@ export default function ColoresYSonrisas() {
 
         <section className="section form-section" id="formulario">
           <div className="wrap form-layout">
-            <div>
+            <div className="form-intro">
               <p className="eyebrow">Matrícula online</p>
               <h2>Quiero matricularme</h2>
-              <p className="soft">Esta es una demostración del flujo. Los campos finales se adaptan al proceso real del nido.</p>
+              <p className="soft">Completa los datos principales. Esta demo muestra la experiencia; el formulario final se adapta al proceso real del nido.</p>
+              <div className="form-note-card">🔒 <span>Información organizada y disponible para el equipo autorizado del nido.</span></div>
             </div>
 
             <form className="enrollment-form" onSubmit={(e) => e.preventDefault()}>
+              <div className="form-progress"><span className="active">1</span><i></i><span>2</span><i></i><span>3</span></div>
+              <h3>Datos principales</h3>
               <div className="form-grid">
                 <label>Nombre del niño o niña<input type="text" placeholder="Ej. Mateo Pérez" /></label>
                 <label>Edad<select defaultValue=""><option value="" disabled>Selecciona</option><option>2 años</option><option>3 años</option><option>4 años</option><option>5 años</option></select></label>
@@ -122,7 +148,7 @@ export default function ColoresYSonrisas() {
                 <label>Turno<select defaultValue=""><option value="" disabled>Selecciona</option><option>Mañana</option><option>Tarde</option></select></label>
               </div>
               <label>Comentario opcional<textarea rows="4" placeholder="Cuéntanos algo que debamos saber"></textarea></label>
-              <button className="btn submit" type="submit">Enviar solicitud de matrícula</button>
+              <button className="btn submit" type="submit">Continuar matrícula <span>→</span></button>
               <small className="form-note">Demo visual: este formulario todavía no guarda información.</small>
             </form>
           </div>
@@ -133,9 +159,9 @@ export default function ColoresYSonrisas() {
             <p className="eyebrow">Preguntas frecuentes</p>
             <h2>Respuestas antes de matricular.</h2>
             <div className="faq-grid">
-              <article><b>¿Cómo sé si hay vacantes?</b><p>La información puede mostrarse aquí o confirmarse luego de enviar la ficha.</p></article>
-              <article><b>¿Puedo iniciar desde mi celular?</b><p>Sí. Todo el flujo está pensado para móvil.</p></article>
-              <article><b>¿La matrícula queda confirmada al enviar?</b><p>No necesariamente. El nido define su proceso de revisión y confirmación.</p></article>
+              <article><span>+</span><b>¿Cómo sé si hay vacantes?</b><p>La información puede mostrarse aquí o confirmarse luego de enviar la ficha.</p></article>
+              <article><span>+</span><b>¿Puedo iniciar desde mi celular?</b><p>Sí. Todo el flujo está pensado para móvil.</p></article>
+              <article><span>+</span><b>¿La matrícula queda confirmada al enviar?</b><p>El nido define su proceso de revisión y confirmación.</p></article>
             </div>
           </div>
         </section>
@@ -144,17 +170,17 @@ export default function ColoresYSonrisas() {
           <div className="wrap dashboard-callout">
             <div>
               <p className="eyebrow">Para el nido</p>
-              <h2>Las solicitudes llegan a un panel resumen.</h2>
-              <p>El dueño o administrador puede ver interesados, solicitudes y estados sin depender de conversaciones dispersas.</p>
+              <h2>Y detrás de la landing, un panel simple para organizar las matrículas.</h2>
+              <p>El equipo puede revisar solicitudes, niveles y estados sin depender de conversaciones dispersas.</p>
             </div>
-            <Link className="btn dashboard-btn" to="/demos/colores-y-sonrisas/admin">Ver dashboard demo</Link>
+            <Link className="btn dashboard-btn" to="/demos/colores-y-sonrisas/admin">Ver dashboard demo <span>→</span></Link>
           </div>
         </section>
       </main>
 
       <footer>
         <div className="wrap foot">
-          <span>Demo comercial · Alan Burga Web</span>
+          <div><Wordmark /><small>NIDO · Bellavista, Callao</small></div>
           <Link to="/">Volver al selector de demos</Link>
         </div>
       </footer>
